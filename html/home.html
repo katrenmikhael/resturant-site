@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="../css/all.min.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+          <div id="boxContainer" class=" justify-content-center align-items-center">
+            <div id="boxItem" class="position-relative d-flex align-items-center justify-content-between">
+                <i id="prev" class="far fa-arrow-alt-circle-left"></i>
+                <i id="close" class="far fa-times-circle top-0 end-0 position-absolute"></i>
+                <i id="next" class="far fa-arrow-alt-circle-right"></i>
+            </div>
+          </div>
+          <nav class="navbar  bg-body-tertiary bg-secondary bg-opacity-25  navbar-fixed-top shadow-sm mb-5">
+            <div class="container">
+              <a class="navbar-brand text-dark" href="#">restaurant <span class="fs-6 opacity-75">recipes</span></a>
+                <form class=" pt-3" role="search">
+                  <a class="btn btn-outline-dark" id="logOut" type="submit">logout</a>
+                </form>
+            </div>
+          </nav>
+          <div class="welcome-sec p-3  mx-auto mt-5 bg-secondary bg-opacity-25 shadow w-50 rounded">
+            <h4 class="text-dark">welcome <span class="name fw-bold" id="callname"></span></h4>
+          </div>
+
+          <div class="select-recipe mt-5 p-5 w-75 m-auto">
+            <select name="recipes" class="form-select bg-secondary bg-opacity-10" id="recipes">
+              <option value="Defult" selected disabled>Please choose the wanted recipe</option>
+              <option value="carrot">carrot</option>
+              <option value="broccoli">broccoli</option>
+              <option value="asparagus">asparagus</option>
+            </select>
+          </div>
+
+          <div class="posts-sec">
+            <div class="row mx-0" id="posts">
+
+          </div>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/home.js"></script>
+    </body>
+</html>

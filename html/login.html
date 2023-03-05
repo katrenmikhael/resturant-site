@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="../css/all.min.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-secondary bg-opacity-25 shadow-sm mb-5">
+            <div class="container">
+              <a class="navbar-brand text-dark" href="#">restaurant <span class="fs-6 opacity-75">recipes</span></a>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="ms-auto pt-3" role="search">
+                  <a class="btn btn-outline-dark" id="register-btn" type="submit">Register</a>
+                </form>
+              </div>
+            </div>
+          </nav>
+        <div class="formOuterContainer p-5 h-100">           
+            <div class="form-container mt-5 shadow-sm p-5 w-50 text-center m-auto bg-secondary bg-opacity-25">
+                <h4 class="text-dark mb-3">Login</h4>
+                <input type="email" class="form-control bg-secondary bg-opacity-10 text-dark my-3" id="email" placeholder="Enter Email">
+                <input type="password" class="form-control bg-secondary bg-opacity-10 text-light my-3" id="password" placeholder="Enter Password">
+                <span class="text-danger fs-4 my-3 d-none" id="failed">Email or Password is incorrect</span>
+                <button class="btn btn-outline-dark my-3 w-100" id="btn-login">Login</button>
+                <span class="text-dark">Don’t have an account?<a class="link-dark" id="signUp">Sign Up</a></span>
+            </div>
+        </div>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/login.js"></script>
+    </body>
+</html>
